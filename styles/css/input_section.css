@@ -60,7 +60,7 @@ img.input-icon {
   gap: 0.5rem;
 }
 
-.tip-percent:not(:last-child) {
+.tip-percent {
   height: 2rem;
   flex: 1 0 4rem;
   border-radius: 5px;
