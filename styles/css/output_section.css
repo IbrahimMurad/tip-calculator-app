@@ -1,0 +1,60 @@
+.output-section {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  width: 100%;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+}
+.output-section .tip-amount, .output-section .total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.output-section .tip-amount .label, .output-section .total .label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-weight: 700;
+}
+.output-section .tip-amount .label > span, .output-section .total .label > span {
+  font-size: 0.8rem;
+}
+.output-section .tip-amount .label > span + span, .output-section .total .label > span + span {
+  font-size: 0.6rem;
+  color: var(--grayish-cyan);
+}
+.output-section .tip-amount .result, .output-section .total .result {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--strong-cyan);
+}
+.output-section .reset {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3rem;
+  margin-top: auto;
+  padding: 0.5rem 0;
+  color: var(--very-dark-cyan);
+  background-color: var(--dark-grayish-cyan);
+  cursor: not-allowed;
+}
+.output-section .reset.active {
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .output-section {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=output_section.css.map */

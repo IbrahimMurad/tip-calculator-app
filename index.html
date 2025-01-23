@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/css/input_section.css" />
+    <link rel="stylesheet" href="./styles/css/output_section.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          src="./images/logo.svg"
+          alt="A logo which is the ward splitter splitted into two parts, 'spli' at the top and 'tter' at the bottom"
+          width="87"
+          height="54"
+        />
+      </header>
+      <div class="container">
+        <section class="input-section">
+          <div class="bill-input">
+            <div class="label-error">
+              <label for="bill">Bill</label>
+              <span id="bill-error-message"></span>
+            </div>
+            <div>
+              <img
+                class="input-icon"
+                src="./images/icon-dollar.svg"
+                alt="dollar icon"
+              />
+              <input type="number" id="bill" name="bill" placeholder="0" />
+            </div>
+          </div>
+          <div class="tip-selection">
+            <div class="label-error">
+              <label for="tip">Select Tip %</label>
+              <span id="tip-error-message"></span>
+            </div>
+            <div class="selection-group">
+              <input type="button" class="tip-percent" value="5%" />
+              <input type="button" class="tip-percent" value="10%" />
+              <input type="button" class="tip-percent" value="15%" />
+              <input type="button" class="tip-percent" value="25%" />
+              <input type="button" class="tip-percent" value="50%" />
+              <input
+                type="number"
+                id="custom-tip"
+                name="custom-tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div class="num-of-people">
+            <div class="label-error">
+              <label for="people-number">Number of People</label>
+              <span id="people-number-error-message"></span>
+            </div>
+            <div>
+              <img
+                class="input-icon"
+                src="./images/icon-person.svg"
+                alt="person icon"
+              />
+              <input
+                type="number"
+                id="people-number"
+                name="people-number"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="output-section">
+          <div class="tip-amount">
+            <p class="label"><span>Tip Amount</span><span>/ person</span></p>
+            <div class="result" id="tip-amount-result" data-tip_amount="0.0">
+              $0.0
+            </div>
+          </div>
+          <div class="total">
+            <p class="label"><span>Total</span><span>/ person</span></p>
+            <div class="result" id="total-result" data-total="0.0">$0.0</div>
+          </div>
+          <button class="reset">Reset</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
