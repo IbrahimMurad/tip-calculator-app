@@ -67,6 +67,7 @@ tipButtons.forEach((button) => {
       button.classList.remove("active");
     });
     button.classList.add("active");
+    customTipInput.value = "";
     inputFields.tip = parseFloat(button.value);
     calculateTip();
   });
