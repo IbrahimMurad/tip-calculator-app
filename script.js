@@ -58,7 +58,6 @@ billInput.addEventListener("input", () => {
   billInput.classList.remove("error");
   inputFields.bill = parseFloat(billInput.value);
   calculateTip();
-  console.log(inputFields);
 });
 
 tipButtons.forEach((button) => {
@@ -96,7 +95,6 @@ customTipInput.addEventListener("input", () => {
   tipError.textContent = "";
   inputFields.tip = tipValue;
   calculateTip();
-  console.log(inputFields);
 });
 
 peopleInput.addEventListener("input", () => {
@@ -122,7 +120,6 @@ peopleInput.addEventListener("input", () => {
   peopleError.textContent = "";
   inputFields.people = peopleValue;
   calculateTip();
-  console.log(inputFields);
 });
 
 resetButton.addEventListener("click", reset);
@@ -145,6 +142,5 @@ function calculateTip() {
     tipPerPerson: "$" + tipPerPerson.toFixed(2),
     totalPerPerson: "$" + totalPerPerson.toFixed(2),
   };
-  console.log(result);
   updateResult(result);
 }
